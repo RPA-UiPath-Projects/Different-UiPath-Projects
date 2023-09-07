@@ -1,0 +1,68 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="848,321" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Drawing.Imaging</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="376,256" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeCode ContinueOnError="{x:Null}" Code="Public Class convert_html_code_to_image&#xD;&#xA;    Inherits System.Web.UI.Page&#xD;&#xA;&#x9;Dim TxtHtmlCode As String&#xD;&#xA;&#x9;'Dim TxtBaseUrl As String&#xD;&#xA;    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) _&#xD;&#xA;        Handles Me.Load&#xD;&#xA;        If Not IsPostBack Then&#xD;&#xA;&#x9;&#x9;&#x9;TxtHtmlCode = &quot;&lt;html&gt;&quot; &amp; vbCr &amp; vbLf &amp; &quot; &lt;body&gt;&quot; &amp; vbCr &amp; vbLf &amp; _&#xD;&#xA;                &quot;  &lt;br/&gt;&quot; &amp; vbCr &amp; vbLf &amp; &quot;  Hello World from selectpdf.com.&quot; _&#xD;&#xA;                &amp; vbCr &amp; vbLf &amp; &quot;  &lt;br/&gt;&quot; &amp; vbCr &amp; vbLf &amp; &quot;  &lt;br/&gt;&quot; &amp; vbCr &amp; vbLf _&#xD;&#xA;                &amp; &quot;  &lt;br/&gt;&quot; &amp; vbCr &amp; vbLf &amp; &quot;  &lt;br/&gt;&quot; &amp; vbCr &amp; vbLf &amp; _&#xD;&#xA;                &quot;  Hello World from selectpdf.com.&quot; &amp; vbCr &amp; vbLf &amp; &quot;  &lt;br/&gt;&quot; _&#xD;&#xA;                &amp; vbCr &amp; vbLf &amp; &quot;  &lt;br/&gt;&quot; &amp; vbCr &amp; vbLf &amp; &quot; &lt;/body&gt;&quot; _&#xD;&#xA;                &amp; vbCr &amp; vbLf &amp; &quot;&lt;/html&gt;&quot; &amp; vbCr &amp; vbLf&#xD;&#xA;        End If&#xD;&#xA;&#x9;End Sub&#xD;&#xA;&#x9;Protected Sub BtnSubmit_Click(sender As Object, e As EventArgs)&#xD;&#xA;        ' read parameters from the webpage        &#xD;&#xA;&#x9;&#x9;Dim htmlString As String = TxtHtmlCode&#xD;&#xA;        Dim baseUrl As String = TxtBaseUrl&#xD;&#xA;&#xD;&#xA;        Dim image_format As String = DdlImageFormat.SelectedValue&#xD;&#xA;        Dim imgFormat As ImageFormat = ImageFormat.Png&#xD;&#xA;        If image_format = &quot;jpg&quot; Then&#xD;&#xA;&#x9;&#x9;&#x9;imgFormat = ImageFormat.Jpeg&#xD;&#xA;        ElseIf image_format = &quot;bmp&quot; Then&#xD;&#xA;&#x9;&#x9;&#x9;imgFormat = ImageFormat.Bmp&#xD;&#xA;        End If        &#xD;&#xA;&#x9;&#x9;Dim webPageWidth As Integer = 1024&#xD;&#xA;        Try            &#xD;&#xA;&#x9;&#x9;&#x9;webPageWidth = Convert.ToInt32(TxtWidth.Text)&#xD;&#xA;        Catch        &#xD;&#xA;&#x9;&#x9;End Try        &#xD;&#xA;&#x9;&#x9;Dim webPageHeight As Integer = 0&#xD;&#xA;        Try          &#xD;&#xA;&#x9;&#x9;&#x9;webPageHeight = Convert.ToInt32(TxtHeight.Text)&#xD;&#xA;        Catch&#xD;&#xA;&#x9;&#x9;End Try' instantiate a html to image converter object&#xD;&#xA;&#x9;&#x9;Dim imgConverter As New HtmlToImage()&#xD;&#xA;&#xD;&#xA;        ' set converter options&#xD;&#xA;        imgConverter.WebPageWidth = webPageWidth&#xD;&#xA;        imgConverter.WebPageHeight = webPageHeight&#xD;&#xA;&#xD;&#xA;        ' create a new image converting an url&#xD;&#xA;&#x9;&#x9;Dim image As System.Drawing.Image = _&#xD;&#xA;            imgConverter.ConvertHtmlString(htmlString, baseUrl)&#xD;&#xA;&#xD;&#xA;        ' send image to browser&#xD;&#xA;        Response.Clear()&#xD;&#xA;        Response.ClearHeaders()&#xD;&#xA;        Response.AddHeader(&quot;Content-Type&quot;, &quot;image/&quot; + imgFormat.ToString().ToLower())&#xD;&#xA;        Response.AppendHeader(&quot;content-disposition&quot;, _&#xD;&#xA;                              &quot;attachment;filename=&quot;&quot;image.&quot; + image_format + &quot;&quot;&quot;&quot;)&#xD;&#xA;        image.Save(Response.OutputStream, imgFormat)&#xD;&#xA;        Response.[End]()&#xD;&#xA;&#x9;End Sub&#xD;&#xA;End Class" DisplayName="Invoke code" sap:VirtualizedContainerService.HintSize="334,164" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+      <ui:InvokeCode.Arguments>
+        <InOutArgument x:TypeArguments="x:String" x:Key="TxtBaseUrl">
+          <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="'doc_request id_143.html'" />
+        </InOutArgument>
+      </ui:InvokeCode.Arguments>
+    </ui:InvokeCode>
+  </Sequence>
+</Activity>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomersList>
+	<Customer id="1">
+		<Name>Rajan</Name>
+		<Age>12</Age>
+		<Address>Kailali</Address>
+	</Customer>
+	<Customer id="2">
+		<Name>Rashika</Name>
+		<Age>22</Age>
+		<Address>Banke</Address>
+	</Customer>
+	<Customer id="12">
+		<Name>Jonny</Name>
+		<Age>42</Age>
+		<Address>USA</Address>
+	</Customer>
+</CustomersList>

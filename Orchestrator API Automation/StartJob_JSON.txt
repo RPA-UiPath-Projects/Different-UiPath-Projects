@@ -1,0 +1,1 @@
+{"startInfo": {"ReleaseKey": "<ReleaseKey>","Strategy": "ModernJobsCount","JobsCount": 1,"InputArguments": "{\"in_A\":\"<in_A>\",\"in_B\":\"<in_B>\"}"}}

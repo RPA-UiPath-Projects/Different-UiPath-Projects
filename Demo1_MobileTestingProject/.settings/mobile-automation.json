@@ -1,0 +1,92 @@
+{
+  "GenerateCrossPlatformAttributes": false,
+  "GenerateSelectorsForInnerElements": true,
+  "Connections": [
+    {
+      "Name": "Mi Device",
+      "Description": null,
+      "Url": "https://krishrock_GRFjdU:q7X5mxVnc9sw2gumAw5Q@hub-cloud.browserstack.com/wd/hub",
+      "PlatformName": "Android",
+      "PlatformVersion": "9.0",
+      "DeviceName": "Xiaomi Redmi Note 7",
+      "SingleInstance": null,
+      "WaitForPageUpdate": true,
+      "Capabilities": {
+        "newCommandTimeout": "0"
+      },
+      "GeoLocation": {
+        "Latitude": 20.303417518489283,
+        "Longitude": 78.75,
+        "Altitude": 0.0
+      },
+      "LoggingModel": {
+        "LoggingEnabled": false,
+        "VideoRecordingEnabled": false,
+        "RecordingTimeLimit": 600,
+        "VideoQuality": 1,
+        "CollectScreenshot": 0,
+        "CollectPageSource": 0
+      }
+    },
+    {
+      "Name": "Iphone 13 pro max",
+      "Description": null,
+      "Url": "https://krishrock_GRFjdU:q7X5mxVnc9sw2gumAw5Q@hub-cloud.browserstack.com/wd/hub",
+      "PlatformName": "iOS",
+      "PlatformVersion": "15",
+      "DeviceName": "iPhone 13 Pro Max",
+      "SingleInstance": null,
+      "WaitForPageUpdate": true,
+      "Capabilities": {
+        "newCommandTimeout": "0"
+      },
+      "GeoLocation": {
+        "Latitude": 22.593726063929282,
+        "Longitude": 77.343749999999986,
+        "Altitude": 0.0
+      },
+      "LoggingModel": {
+        "LoggingEnabled": false,
+        "VideoRecordingEnabled": false,
+        "RecordingTimeLimit": 600,
+        "VideoQuality": 1,
+        "CollectScreenshot": 0,
+        "CollectPageSource": 0
+      }
+    }
+  ],
+  "Applications": [
+    {
+      "$id": "1",
+      "Name": "UiBank ios",
+      "Description": null,
+      "Type": "Web",
+      "Platforms": {
+        "iOS": {
+          "Capabilities": {
+            "browserName": "Safari"
+          },
+          "StartPage": "https://uibank.uipath.com"
+        }
+      }
+    },
+    {
+      "$id": "2",
+      "Name": "UiBank Google UiBank",
+      "Description": null,
+      "Type": "Web",
+      "Platforms": {
+        "Android": {
+          "Capabilities": {
+            "browserName": "Chrome"
+          },
+          "StartPage": "https://uibank.uipath.com/"
+        }
+      }
+    }
+  ],
+  "NormalizeSliderValue": false,
+  "IdsMaxAllowedLength": 40,
+  "LogsPath": "%TEMP%\\UiPath Mobile Automation Logs",
+  "Variables": {}
+}
